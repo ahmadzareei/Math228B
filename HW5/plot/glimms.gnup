@@ -1,0 +1,28 @@
+ set terminal postscript eps enhanced color solid fontscale '0.5'
+set out 'Glimms.eps'
+
+set xlabel 'x'
+set ylabel 'u'
+set xtics rotate
+set yrange [-0.5:1.5]
+set multiplot layout 4,3
+
+
+
+plot 'Glimms/data_0.dat' w l t 't=0' linetype 1 linewidth 3
+plot 'Glimms/data_400.dat' w l t 't=0.08' linetype 1 linewidth 3
+plot 'Glimms/data_800.dat' w l t 't=0.16' linetype 1 linewidth 3
+plot 'Glimms/data_1200.dat' w l t 't=0.24' linetype 1 linewidth 3
+plot 'Glimms/data_1600.dat' w l t 't=0.32'linetype 1 linewidth 3
+plot 'Glimms/data_2000.dat' w l t 't=0.4' linetype 1 linewidth 3 
+plot 'Glimms/data_2400.dat' w l t 't=0.48' linetype 1 linewidth 3 
+plot 'Glimms/data_2800.dat' w l t 't=0.56' linetype 1 linewidth 3
+plot 'Glimms/data_3200.dat' w l t 't=0.64' linetype 1 linewidth 3 
+plot 'Glimms/data_3600.dat' w l t 't=0.72' linetype 1 linewidth 3
+plot 'Glimms/data_4000.dat' w l t 't=0.8' linetype 1 linewidth 3
+plot 'Glimms/data_4400.dat' w l t 't=0.88' linetype 1 linewidth 3
+
+
+
+
+

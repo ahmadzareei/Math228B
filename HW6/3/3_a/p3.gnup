@@ -1,0 +1,15 @@
+set terminal postscript eps enhanced color solid fontscale '0.5'
+set palette grey	
+
+set out '1_initialshape_gauss.eps'
+plot 'initialshape.dat' matrix with image notitle
+
+set out '1_noisy_image_noise.eps'
+plot 'image_with_noise.dat' matrix with image notitle
+
+set out '1_final_image_before_renorm.eps'
+plot 'finalshape_before_renorm.dat' matrix with image notitle
+
+
+set out '1_final_image_after_renorm.eps'
+plot 'finalshape_after_renorm.dat' matrix with image notitle

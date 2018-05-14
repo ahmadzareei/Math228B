@@ -1,0 +1,17 @@
+set contour base
+set cntrparam levels increment 0,0.2,1.7
+unset surface
+set table 'cont2.dat'
+splot 'T.dat' matrix
+unset table
+reset 
+set xrange [0:100]
+set yrange [0:100]
+unset key
+l '<./cont2.sh cont2.dat 0 15 0'
+p 'T.dat' matrix with image , '<./cont2.sh cont2.dat 1 15 0' w l lt -1 lw 1.5
+
+set terminal postscript eps enhanced color solid fontscale '0.5'
+set out 'half_half.eps'
+
+rep

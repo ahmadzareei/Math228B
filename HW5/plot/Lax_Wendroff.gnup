@@ -1,0 +1,27 @@
+ set terminal postscript eps enhanced color solid fontscale '0.5'
+set out 'Lax_Wendroff1.eps'
+
+set xlabel 'x'
+set ylabel 'u'
+set xtics rotate
+set yrange [-.5:1.5]
+set multiplot layout 3,3
+
+
+
+plot 'Lax_Wendroff/data_0.dat' w l t 't=0' linetype 1 linewidth 3
+plot 'Lax_Wendroff/data_200.dat' w l t 't=0.04' linetype 1 linewidth 3
+plot 'Lax_Wendroff/data_300.dat' w l t 't=0.06' linetype 1 linewidth 3
+plot 'Lax_Wendroff/data_400.dat' w l t 't=0.08' linetype 1 linewidth 3
+plot 'Lax_Wendroff/data_500.dat' w l t 't=0.1' linetype 1 linewidth 3
+plot 'Lax_Wendroff/data_600.dat' w l t 't=0.12' linetype 1 linewidth 3
+plot 'Lax_Wendroff/data_800.dat' w l t 't=0.16' linetype 1 linewidth 3
+plot 'Lax_Wendroff/data_900.dat' w l t 't=0.18'linetype 1 linewidth 3
+plot 'Lax_Wendroff/data_1000.dat' w l t 't=0.2' linetype 1 linewidth 3 
+
+
+
+
+
+
+

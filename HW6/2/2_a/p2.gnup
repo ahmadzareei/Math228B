@@ -1,0 +1,16 @@
+set terminal postscript eps enhanced color solid fontscale '0.5'
+set out 'arbitrary_curve.eps'
+
+#set xlabel 'x'
+#set ylabel 'y'
+set yrange [-1.5:1.5]
+set xrange [-1.5:1.5]
+
+set contour
+unset surface
+set view 0,0,1
+
+set cntrparam levels discrete 0
+unset key
+
+splot 'data_0.dat' w l , 'data_500.dat' w l, 'data_1500.dat' w l, 'data_3000.dat' w l, 'data_6000.dat' w l, 'data_7000.dat' w l

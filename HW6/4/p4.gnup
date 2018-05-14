@@ -1,0 +1,18 @@
+set terminal postscript eps enhanced color solid fontscale '0.5
+
+set palette grey 
+
+set out 'picture_shape_random_20.eps'
+plot 'data.dat' matrix  with image title 'Shape of picture for segmentation'
+
+reset
+
+set terminal postscript eps enhanced color solid fontscale '0.5
+set contour
+unset surface
+set cntrparam levels discrete 0
+set out 'propagation_shape_random_20.eps'
+unset key
+set view 0,0,1
+
+splot 'data_0.dat' w l, 'data_400.dat' w l , 'data_800.dat' w l, 'data_1200.dat' w l, 'data_1400.dat' w l , 'data_1800.dat' w l
